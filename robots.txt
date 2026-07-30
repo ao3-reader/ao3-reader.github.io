@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://ao3-reader.github.io/sitemap.xml
