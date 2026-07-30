@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AO3 Reader — Unofficial Archive of Our Own App for iPhone &amp; Android</title>
+<meta name="description" content="AO3 Reader is a beautiful unofficial Archive of Our Own app for iPhone and Android. Read fanfiction offline, organize your library, customize fonts and themes, and track your reading — built for fans, by fans.">
+<link rel="canonical" href="https://ao3-reader.github.io/">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0b0607">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AO3 Reader">
+<meta property="og:title" content="AO3 Reader — Unofficial Archive of Our Own App for iPhone &amp; Android">
+<meta property="og:description" content="A beautiful unofficial AO3 reader built for offline reading, discovery, organization, customization, and immersive long-form reading.">
+<meta property="og:url" content="https://ao3-reader.github.io/">
+<meta property="og:image" content="https://ao3-reader.github.io/assets/graphics/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="An open book glowing with red light beneath a floating fountain pen, the AO3 Reader brand motif.">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AO3 Reader — Unofficial Archive of Our Own App">
+<meta name="twitter:description" content="A beautiful unofficial AO3 reader for iPhone and Android. Offline reading, custom themes, powerful discovery, and reading statistics.">
+<meta name="twitter:image" content="https://ao3-reader.github.io/assets/graphics/og-image.jpg">
+
+<!-- Icons -->
+<link rel="icon" href="assets/icon/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/icon/icon-512.png" sizes="512x512" type="image/png">
+<link rel="apple-touch-icon" href="assets/icon/apple-touch-icon.png">
+
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "AO3 Reader",
+  "operatingSystem": "iOS, Android",
+  "applicationCategory": "BooksAndReferenceApplication",
+  "description": "AO3 Reader is an unofficial Archive of Our Own reader for iPhone and Android with offline reading, custom themes, bookmarks, discovery tools, and reading statistics.",
+  "url": "https://ao3-reader.github.io/",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "sameAs": [
+    "https://apps.apple.com/us/app/ao3-archive-reader-unofficial/id6772581092",
+    "https://play.google.com/store/apps/details?id=com.gpllc.ao3reader.app"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "AO3 Reader",
+  "url": "https://ao3-reader.github.io/"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is this the official AO3 app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. AO3 Reader is an independent, unofficial app and is not affiliated with, endorsed by, or sponsored by the Organization for Transformative Works or Archive of Our Own."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I read works offline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. AO3 Reader lets you download works and chapters so you can keep reading without a connection, with your progress saved automatically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is AO3 Reader available for iPhone and Android?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. AO3 Reader is available on the Apple App Store for iPhone and on Google Play for Android."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize fonts, themes, and layouts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Choose from multiple reading themes, fonts, text sizing, and layout density to build a reading style that feels like yours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the app support bookmarks and collections?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Save works to your library, bookmark your place in a chapter, and organize what you're reading into collections."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top" aria-label="AO3 Reader home">
+      <img class="brand-icon" src="assets/icon/app-icon.png" width="32" height="32" alt="" loading="eager">
+      <span class="brand-name">AO3 Reader</span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <a class="btn btn-nav" href="#download">Download</a>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+      <span class="menu-toggle-bar"></span>
+      <span class="menu-toggle-bar"></span>
+      <span class="menu-toggle-bar"></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Mobile">
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#download">Download</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu-stores">
+      <a class="btn btn-store btn-store--apple" href="https://apps.apple.com/us/app/ao3-archive-reader-unofficial/id6772581092">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16.365 1.43c0 1.14-.417 2.06-1.25 2.83-.898.83-1.98 1.28-3.02 1.19-.13-1.11.41-2.13 1.24-2.84.87-.76 2.02-1.24 3.03-1.18zM20.6 17.02c-.33.76-.72 1.48-1.18 2.16-.63.94-1.15 1.6-1.55 1.97-.62.6-1.29.91-1.99.93-.51.01-1.13-.15-1.85-.47-.72-.32-1.38-.47-1.99-.47-.63 0-1.31.15-2.04.47-.73.32-1.33.49-1.79.5-.68.03-1.36-.29-2.03-.95-.44-.4-.98-1.08-1.63-2.05-.7-1.03-1.28-2.23-1.73-3.6-.48-1.47-.72-2.9-.72-4.28 0-1.58.34-2.94 1.03-4.09.54-.92 1.26-1.65 2.16-2.18.9-.53 1.87-.81 2.92-.83.55 0 1.28.17 2.19.51.9.34 1.48.51 1.73.51.19 0 .83-.2 1.9-.6 1.02-.37 1.88-.52 2.58-.46 1.9.15 3.33.9 4.28 2.26-1.7 1.03-2.54 2.47-2.53 4.32.02 1.44.54 2.64 1.56 3.59.46.44 1 .78 1.6 1.02-.13.37-.27.73-.42 1.08z"/></svg>
+        <span>App Store</span>
+      </a>
+      <a class="btn btn-store btn-store--google" href="https://play.google.com/store/apps/details?id=com.gpllc.ao3reader.app">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3.6 2.6c-.3.3-.5.8-.5 1.4v15.9c0 .6.2 1.1.5 1.4l.1.1L13 12.4v-.2L3.7 2.5l-.1.1z"/><path fill="currentColor" d="M16.2 15.6l-3.2-3.2v-.2l3.2-3.2.1.1 3.8 2.2c1.1.6 1.1 1.6 0 2.2l-3.9 2.1z"/><path fill="currentColor" d="M16.3 15.5L13 12.2l-9.4 9.4c.4.4 1 .4 1.7.1l11-6.2"/><path fill="currentColor" d="M16.3 8.9L5.3 2.7c-.7-.4-1.3-.3-1.7.1L13 12.2l3.3-3.3z"/></svg>
+        <span>Google Play</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top" aria-label="Introduction">
+    <div class="hero-ambient" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Unofficial · iPhone &amp; Android</p>
+        <h1>Fall into every story.</h1>
+        <p class="hero-lede">A beautiful unofficial AO3 reader for iPhone and Android, built for offline reading, discovery, organization, customization, and immersive long-form reading.</p>
+
+        <div class="store-buttons">
+          <a class="btn btn-store btn-store--apple" href="https://apps.apple.com/us/app/ao3-archive-reader-unofficial/id6772581092">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16.365 1.43c0 1.14-.417 2.06-1.25 2.83-.898.83-1.98 1.28-3.02 1.19-.13-1.11.41-2.13 1.24-2.84.87-.76 2.02-1.24 3.03-1.18zM20.6 17.02c-.33.76-.72 1.48-1.18 2.16-.63.94-1.15 1.6-1.55 1.97-.62.6-1.29.91-1.99.93-.51.01-1.13-.15-1.85-.47-.72-.32-1.38-.47-1.99-.47-.63 0-1.31.15-2.04.47-.73.32-1.33.49-1.79.5-.68.03-1.36-.29-2.03-.95-.44-.4-.98-1.08-1.63-2.05-.7-1.03-1.28-2.23-1.73-3.6-.48-1.47-.72-2.9-.72-4.28 0-1.58.34-2.94 1.03-4.09.54-.92 1.26-1.65 2.16-2.18.9-.53 1.87-.81 2.92-.83.55 0 1.28.17 2.19.51.9.34 1.48.51 1.73.51.19 0 .83-.2 1.9-.6 1.02-.37 1.88-.52 2.58-.46 1.9.15 3.33.9 4.28 2.26-1.7 1.03-2.54 2.47-2.53 4.32.02 1.44.54 2.64 1.56 3.59.46.44 1 .78 1.6 1.02-.13.37-.27.73-.42 1.08z"/></svg>
+            <span class="btn-store-text"><small>Download on the</small>App&nbsp;Store</span>
+          </a>
+          <a class="btn btn-store btn-store--google" href="https://play.google.com/store/apps/details?id=com.gpllc.ao3reader.app">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3.6 2.6c-.3.3-.5.8-.5 1.4v15.9c0 .6.2 1.1.5 1.4l.1.1L13 12.4v-.2L3.7 2.5l-.1.1z"/><path fill="currentColor" d="M16.2 15.6l-3.2-3.2v-.2l3.2-3.2.1.1 3.8 2.2c1.1.6 1.1 1.6 0 2.2l-3.9 2.1z"/><path fill="currentColor" d="M16.3 15.5L13 12.2l-9.4 9.4c.4.4 1 .4 1.7.1l11-6.2"/><path fill="currentColor" d="M16.3 8.9L5.3 2.7c-.7-.4-1.3-.3-1.7.1L13 12.2l3.3-3.3z"/></svg>
+            <span class="btn-store-text"><small>Get it on</small>Google&nbsp;Play</span>
+          </a>
+        </div>
+
+        <ul class="trust-list">
+          <li><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9 9 9 0 0 0-9-9zm1 13.41L7.59 12 9 10.59l4 4 7-7L21.41 9z"/></svg>Offline reading</li>
+          <li><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9 9 9 0 0 0-9-9zm1 13.41L7.59 12 9 10.59l4 4 7-7L21.41 9z"/></svg>Custom themes</li>
+          <li><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9 9 9 0 0 0-9-9zm1 13.41L7.59 12 9 10.59l4 4 7-7L21.41 9z"/></svg>Reading statistics</li>
+          <li><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9 9 9 0 0 0-9-9zm1 13.41L7.59 12 9 10.59l4 4 7-7L21.41 9z"/></svg>Multi-language support</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" aria-hidden="false">
+        <div class="hero-card hero-card--main reveal-float">
+          <img src="assets/graphics/hero-composition.jpg" width="599" height="1300" alt="AO3 Reader app artwork: a reader curled up with their phone beneath floating fanfiction book covers labelled Enemies to Lovers, Found Family, and Slow Burn." loading="eager" fetchpriority="high">
+        </div>
+        <div class="hero-card hero-card--float reveal-float-delay">
+          <img src="assets/screenshots/reading-stats.jpg" width="360" height="780" alt="AO3 Reader reading statistics screen showing words read, reading streak, and chapters completed." loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFIT STRIP -->
+  <section class="benefit-strip" aria-label="Core benefits">
+    <ul>
+      <li>
+        <svg viewBox="0 0 48 48" width="28" height="28" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M24 6v22m0 0-8-8m8 8 8-8M10 36h28"/></svg>
+        <span>Read offline</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 48 48" width="28" height="28" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M8 10h32M8 20h32M8 30h20"/></svg>
+        <span>Organize your library</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 48 48" width="28" height="28" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="15" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M24 9a15 15 0 0 1 0 30"/></svg>
+        <span>Customize the reader</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 48 48" width="28" height="28" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 34V18m11 16V10m11 24V22m11 12v-8"/></svg>
+        <span>Track your progress</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features" aria-labelledby="features-heading">
+    <div class="section-head">
+      <p class="eyebrow">Everything a reader needs</p>
+      <h2 id="features-heading">Made for how fans actually read.</h2>
+    </div>
+
+    <div class="feature-grid">
+      <article class="feature-card feature-card--wide">
+        <div class="feature-icon">
+          <svg viewBox="0 0 48 48" width="32" height="32" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 30a9 9 0 0 1 1-18 12 12 0 0 1 23 4 8 8 0 0 1-2 16H14z"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M24 26v12m0 0-5-5m5 5 5-5"/></svg>
+        </div>
+        <h3>Offline reading</h3>
+        <p>Download works and whole chapters before you go, then read anywhere — on the train, on a flight, or wherever the signal drops.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 48 48" width="32" height="32" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 12h12M9 20h12M9 28h8M27 40 20 12h4l7 28Zm0 0 7-24h4l-7 24Z"/></svg>
+        </div>
+        <h3>Beautiful typography</h3>
+        <p>Crisp, considered type with adjustable size, spacing, and fonts built for long chapters, not short posts.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 48 48" width="32" height="32" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="16" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" d="M24 8a16 16 0 0 1 11 27M24 8a16 16 0 0 0-11 27"/><circle cx="24" cy="24" r="4" fill="currentColor"/></svg>
+        </div>
+        <h3>Reading themes</h3>
+        <p>Switch between luxury dark, true black, and cozy light — tuned for late nights and bright afternoons alike.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 48 48" width="32" height="32" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M13 6h22v36l-11-8-11 8Z"/></svg>
+        </div>
+        <h3>Bookmarks &amp; collections</h3>
+        <p>Save your place in any chapter and organize the works you love into collections you'll actually return to.</p>
+      </article>
+
+      <article class="feature-card feature-card--wide">
+        <div class="feature-icon">
+          <svg viewBox="0 0 48 48" width="32" height="32" aria-hidden="true" focusable="false"><circle cx="21" cy="21" r="12" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="m30 30 9 9"/></svg>
+        </div>
+        <h3>Powerful discovery</h3>
+        <p>Search works, authors, and tags together, then filter by fandom, rating, and relationship to land on exactly what you're craving next.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 48 48" width="32" height="32" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 34V18m11 16V10m11 24V22m11 12v-8"/></svg>
+        </div>
+        <h3>Reading statistics</h3>
+        <p>See your words read, chapters finished, and reading streaks build over time — a quiet record of every story you've lived in.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- SCREENSHOT SHOWCASE -->
+  <section class="showcase" id="screenshots" aria-labelledby="showcase-heading">
+    <div class="section-head">
+      <p class="eyebrow">Inside the app</p>
+      <h2 id="showcase-heading">A reader worth looking at.</h2>
+    </div>
+
+    <div class="showcase-track">
+      <figure class="showcase-item showcase-item--1">
+        <img src="assets/screenshots/reader-view.jpg" width="360" height="780" alt="AO3 Reader chapter view with elegant serif typography, showing Chapter 3 of a fanfic mid-scene with a reading progress bar." loading="lazy">
+      </figure>
+      <figure class="showcase-item showcase-item--2">
+        <img src="assets/screenshots/themes-customization.jpg" width="360" height="780" alt="AO3 Reader reading style settings with Luxury Dark, AMOLED Black, and Cozy Light themes, plus font and layout options." loading="lazy">
+      </figure>
+      <figure class="showcase-item showcase-item--3">
+        <img src="assets/screenshots/discovery-search.jpg" width="360" height="780" alt="AO3 Reader search screen with results for works, authors, and tags, and quick filter chips for Works, Authors, and Tags." loading="lazy">
+      </figure>
+      <figure class="showcase-item showcase-item--4">
+        <img src="assets/screenshots/feature-overview.jpg" width="360" height="780" alt="AO3 Reader work detail screen showing a Start Reading button, chapter list, and download options for offline access." loading="lazy">
+      </figure>
+      <figure class="showcase-item showcase-item--5">
+        <img src="assets/screenshots/reading-stats.jpg" width="360" height="780" alt="AO3 Reader reading statistics dashboard with a words-read goal ring, reading streak, and weekly activity chart." loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- FEATURE SPOTLIGHT: READING STATS -->
+  <section class="spotlight spotlight--stats" aria-labelledby="spotlight-stats-heading">
+    <div class="spotlight-inner">
+      <div class="spotlight-visual">
+        <img src="assets/screenshots/reading-stats-lg.jpg" width="507" height="1100" alt="AO3 Reader reading statistics screen with words read, reading time, chapters completed, bookmarks, a reading streak, and a weekly activity heatmap." loading="lazy">
+      </div>
+      <div class="spotlight-copy">
+        <p class="eyebrow">Feature spotlight</p>
+        <h2 id="spotlight-stats-heading">Track your progress, beautifully.</h2>
+        <p>Every session adds up. AO3 Reader keeps a quiet, ongoing record of your reading life — reading time, chapters completed, words read, and the streaks that keep you coming back.</p>
+        <ul class="spotlight-list">
+          <li>Reading time, logged automatically as you read</li>
+          <li>Chapters completed and words read, tracked over time</li>
+          <li>Daily and weekly reading streaks</li>
+          <li>Bookmarks and a visual reading activity calendar</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMMERSIVE READING -->
+  <section class="spotlight spotlight--immersive" aria-labelledby="spotlight-immersive-heading">
+    <div class="spotlight-inner spotlight-inner--reverse">
+      <div class="spotlight-copy">
+        <p class="eyebrow">The reading experience</p>
+        <h2 id="spotlight-immersive-heading">Nothing between you and the story.</h2>
+        <p>No banners, no clutter, no losing your place. Download a work before you lose signal, pick a theme that suits the hour, and let the app fade into the background — because the only thing that should hold your attention is the next line.</p>
+        <ul class="spotlight-list">
+          <li>Full offline access to downloaded works</li>
+          <li>Adjustable fonts, size, and line spacing for comfortable reading</li>
+          <li>Light and dark themes tuned for long sessions</li>
+          <li>Your place, saved automatically every time</li>
+        </ul>
+      </div>
+      <div class="spotlight-visual">
+        <img src="assets/screenshots/reader-view-lg.jpg" width="507" height="1100" alt="AO3 Reader in-chapter reading view with warm serif typography and a reading progress indicator, set against a moody candlelit background." loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- FANDOM SECTION -->
+  <section class="fandom" aria-labelledby="fandom-heading">
+    <div class="section-head">
+      <p class="eyebrow">Every fandom welcome</p>
+      <h2 id="fandom-heading">One home for every obsession.</h2>
+      <p class="section-sub">Archive of Our Own hosts millions of works across nearly every fandom and category imaginable. AO3 Reader helps you move through all of it — one clean, focused app for whatever you're into this week.</p>
+    </div>
+    <ul class="pill-list" aria-label="Example fandom categories">
+      <li class="pill">Romance</li>
+      <li class="pill">Fantasy</li>
+      <li class="pill">Anime</li>
+      <li class="pill">Marvel</li>
+      <li class="pill">Harry Potter</li>
+      <li class="pill">Star Wars</li>
+      <li class="pill">Sci-Fi</li>
+      <li class="pill">Original Works</li>
+      <li class="pill">LGBTQ+ Stories</li>
+    </ul>
+    <p class="fandom-note">Fandom and franchise names are used descriptively to describe available content categories on Archive of Our Own. AO3 Reader is not endorsed by or affiliated with these franchises or their rights holders.</p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq" aria-labelledby="faq-heading">
+    <div class="section-head">
+      <p class="eyebrow">Good to know</p>
+      <h2 id="faq-heading">Frequently asked questions.</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Is this the official AO3 app?</summary>
+        <p>No. AO3 Reader is an independent, unofficial app. It is not affiliated with, endorsed by, or sponsored by the Organization for Transformative Works or Archive of Our Own.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I read works offline?</summary>
+        <p>Yes. Download works and chapters to your device and keep reading with no connection at all — your progress is saved automatically as you go.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is AO3 Reader available for iPhone and Android?</summary>
+        <p>Yes. AO3 Reader is available on the Apple App Store for iPhone and on Google Play for Android.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I customize fonts, themes, and layouts?</summary>
+        <p>Yes. Choose from multiple reading themes, fonts, text sizing, and layout density so every chapter reads the way you want it to.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Does the app support bookmarks and collections?</summary>
+        <p>Yes. Bookmark your place, like the works you love, and keep your library organized into collections you can return to anytime.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta" id="download" aria-labelledby="final-cta-heading">
+    <div class="final-cta-inner">
+      <img class="final-cta-icon" src="assets/icon/app-icon.png" width="64" height="64" alt="" loading="lazy">
+      <h2 id="final-cta-heading">Your next favorite story is waiting.</h2>
+      <p>Free to download. Yours to get lost in.</p>
+      <div class="store-buttons store-buttons--center">
+        <a class="btn btn-store btn-store--apple" href="https://apps.apple.com/us/app/ao3-archive-reader-unofficial/id6772581092">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="currentColor" d="M16.365 1.43c0 1.14-.417 2.06-1.25 2.83-.898.83-1.98 1.28-3.02 1.19-.13-1.11.41-2.13 1.24-2.84.87-.76 2.02-1.24 3.03-1.18zM20.6 17.02c-.33.76-.72 1.48-1.18 2.16-.63.94-1.15 1.6-1.55 1.97-.62.6-1.29.91-1.99.93-.51.01-1.13-.15-1.85-.47-.72-.32-1.38-.47-1.99-.47-.63 0-1.31.15-2.04.47-.73.32-1.33.49-1.79.5-.68.03-1.36-.29-2.03-.95-.44-.4-.98-1.08-1.63-2.05-.7-1.03-1.28-2.23-1.73-3.6-.48-1.47-.72-2.9-.72-4.28 0-1.58.34-2.94 1.03-4.09.54-.92 1.26-1.65 2.16-2.18.9-.53 1.87-.81 2.92-.83.55 0 1.28.17 2.19.51.9.34 1.48.51 1.73.51.19 0 .83-.2 1.9-.6 1.02-.37 1.88-.52 2.58-.46 1.9.15 3.33.9 4.28 2.26-1.7 1.03-2.54 2.47-2.53 4.32.02 1.44.54 2.64 1.56 3.59.46.44 1 .78 1.6 1.02-.13.37-.27.73-.42 1.08z"/></svg>
+          <span class="btn-store-text"><small>Download on the</small>App&nbsp;Store</span>
+        </a>
+        <a class="btn btn-store btn-store--google" href="https://play.google.com/store/apps/details?id=com.gpllc.ao3reader.app">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3.6 2.6c-.3.3-.5.8-.5 1.4v15.9c0 .6.2 1.1.5 1.4l.1.1L13 12.4v-.2L3.7 2.5l-.1.1z"/><path fill="currentColor" d="M16.2 15.6l-3.2-3.2v-.2l3.2-3.2.1.1 3.8 2.2c1.1.6 1.1 1.6 0 2.2l-3.9 2.1z"/><path fill="currentColor" d="M16.3 15.5L13 12.2l-9.4 9.4c.4.4 1 .4 1.7.1l11-6.2"/><path fill="currentColor" d="M16.3 8.9L5.3 2.7c-.7-.4-1.3-.3-1.7.1L13 12.2l3.3-3.3z"/></svg>
+          <span class="btn-store-text"><small>Get it on</small>Google&nbsp;Play</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/icon/app-icon.png" width="28" height="28" alt="" loading="lazy">
+      <span>AO3 Reader</span>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="https://apps.apple.com/us/app/ao3-archive-reader-unofficial/id6772581092">App Store</a>
+      <a href="https://play.google.com/store/apps/details?id=com.gpllc.ao3reader.app">Google Play</a>
+      <a href="https://github.com/ao3-reader/ao3-reader.github.io">GitHub repository</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <p class="disclaimer">AO3 Reader is an unofficial application and is not affiliated with, endorsed by, or sponsored by the Organization for Transformative Works (OTW) or Archive of Our Own (AO3). All trademarks belong to their respective owners.</p>
+    <p class="copyright">&copy; 2026 AO3 Reader.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
